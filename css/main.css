@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    max-width: 1416px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -267,31 +267,32 @@ body {
 .figma__btn-box {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
 }
 
 .figma__box-show {
     border: 2px solid #D1D5DB;
     background-color: transparent;
-    padding: 12px 52px;
+    padding: 12px 0;
     border-radius: 24px;
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    text-align: center;
+    width: 50%;
 }
 
 .figma__box-try {
     border: 2px solid #2563EB;
     background-color: #2563EB;
-    padding: 12px 53px;
     border-radius: 24px;
     color: white;
+    padding: 12px 0;
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    text-align: center;
+    width: 50%;
 }
 
 .loader-btn {
@@ -406,7 +407,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
 }
 
 .write-title {
@@ -659,6 +659,9 @@ body {
 .write-img2 {
     display: none !important;
 }
+.write-flex{
+    padding-left: 80px;
+}
 
 
 @media (max-width: 1024px) {
@@ -688,10 +691,7 @@ body {
         display: flex;
         margin-right: 16px;
         margin-left: 16px;
-    }
-
-    .write-container img {
-        width: 700px;
+        overflow: hidden;
     }
 
     .blog__grid-box {
@@ -723,8 +723,6 @@ body {
 }
 
 .write-img2 {
-    display: flex !important;
-    max-width: 430px;
 }
 
 @media (max-width: 360px) {
@@ -842,7 +840,7 @@ body {
     }
 
     .figma__box-show {
-        padding: 12px 23px;
+        padding: 12px 0;
         font-family: Inter, sans-serif;
         font-size: 16px;
         font-weight: 600;
@@ -893,8 +891,7 @@ body {
     .write-container {
         padding: 0;
         padding-bottom: 40px;
-        margin-right: 16px;
-        margin-left: 16px;
+        max-width: 328px;
         text-align: left;
         display: flex;
         flex-wrap: wrap;
@@ -903,8 +900,8 @@ body {
 
     .write-flex {
         text-align: left;
-        margin-right: auto;
-        margin-left: 24px;
+        padding-left: 24px;
+
     }
 
     .write-title {
