@@ -12,6 +12,12 @@ body {
     text-align: left;
 }
 
+button:hover {
+    background-color: transparent;
+    transition: ease-in .3s;
+    color: black;
+}
+
 .header {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -23,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1400px !important;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -659,7 +665,8 @@ body {
 .write-img2 {
     display: none !important;
 }
-.write-flex{
+
+.write-flex {
     padding-left: 80px;
 }
 
@@ -689,8 +696,6 @@ body {
     .write-container {
         padding-top: 50px;
         display: flex;
-        margin-right: 16px;
-        margin-left: 16px;
         overflow: hidden;
     }
 
@@ -716,13 +721,14 @@ body {
         display: none;
     }
 
+    .write-img2 {
+        display: flex !important;
+    }
+
 }
 
 .blog__grid-text1 {
     display: none;
-}
-
-.write-img2 {
 }
 
 @media (max-width: 360px) {
@@ -738,6 +744,7 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .product-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
